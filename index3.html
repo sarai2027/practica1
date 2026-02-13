@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Segunda Página Web Responsive</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background: #2b6cb0;
+            color: white;
+        }
+        nav{
+            background: #e2e8f0;
+        }
+        footer{
+            background: #2b6cb0;
+            color: white;
+            text-align: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+        .caja{
+            background: #f7fafc;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3%;
+            box-shadow: 20px 20px 50px 3px;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            margin: 30px;
+            text-align: center;
+        }
+        .article img{
+            max-width: 100%;
+            height: auto;
+        }
+        nav img{
+            width: 40px;
+            height: auto;
+            display: block;
+            box-sizing: border-box;
+        }
+    </style>
+    <header>
+        <h1>Mi Web Responsive (Diego Santamaria)</h1>
+        <p>Ejemplo simple usando grid.</p>
+    </header>
+
+    <nav>
+        <img src="https://www.bing.com/th/id/OIP.vZqQNVdadrX6bbRTNZhYZgHaHa?w=209&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+        <a href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Acerca</a>
+    </nav>
+
+    <main>
+        <div class="grid">
+            <article class="caja">
+                <h2>Artículo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias repudiandae aspernatur architecto perspiciatis numquam facilis ipsam at tenetur quas harum, vitae soluta blanditiis consequuntur corporis perferendis culpa commodi rem.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quod accusamus tempore blanditiis optio quaerat, ad esse, alias deserunt laudantium quasi facilis voluptatibus totam consectetur? Fugit aliquam neque repudiandae saepe.</p>
+                <img src="https://www.bing.com/th/id/OIP.GLROJzE0eb4LeQCETUiY_gHaHG?w=176&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+            </article>
+
+            <article class="caja">
+                <h2>Artículo 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, doloremque. Fugit, magni sapiente blanditiis sequi possimus voluptatem iusto ea tenetur ad dignissimos. Debitis natus dolorem adipisci sed saepe amet iste!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, illo! Quam error ullam voluptatibus iure tempore necessitatibus impedit, quibusdam reiciendis eaque ipsum, facilis optio libero. Adipisci laborum maiores similique quos?</p>
+                <img src="https://www.bing.com/th/id/OIP.emtz7BXHHRSkTn2VfTzmZgHaLH?w=160&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+            </article>
+
+            <article class="caja">
+                <h2>Artículo 3</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, illo! Quam error ullam voluptatibus iure tempore necessitatibus impedit, quibusdam reiciendis eaque ipsum, facilis optio libero. Adipisci laborum maiores similique quos?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, illo! Quam error ullam voluptatibus iure tempore necessitatibus impedit, quibusdam reiciendis eaque ipsum, facilis optio libero. Adipisci laborum maiores similique quos?</p>
+                <img src="https://www.bing.com/th/id/OIP.c7QD2FlZtuTUK3t6XDZoTwHaHa?w=209&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Footer - ejemplo con Grid</p>
+    </footer>
+
+</body>
+</html>

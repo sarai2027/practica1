@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Página Web Responsive</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background: #333;
+            color: white;
+        }
+        nav{
+            background: #eee;
+            text-align: center;
+        }
+        footer{
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .contenedor{
+            display: flex;
+            gap: 50px;
+            padding: 15px;
+        }
+        .col{
+            background: #f6f6f6;
+            padding: 15px;
+            flex: 1;
+        }
+        @media (max-width: 700px) {
+            .contenedor {
+                flex-direction: column;}
+        }
+        nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .col img{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <header>
+        <h1>Mi Web Responsive (Diego Santamaria)</h1>
+        <p>Ejemplo simple para entender responsive.</p>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <div class="contenedor">
+            <section class="col">
+            <h2>Sección 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam iure quisquam accusantium nihil provident neque a! Itaque, tempore. Repellat hic voluptate reiciendis doloremque, dolorum inventore distinctio harum sit modi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam iure quisquam accusantium nihil provident neque a! Itaque, tempore. Repellat hic voluptate reiciendis doloremque, dolorum inventore distinctio harum sit modi!</p>
+            <img src="https://www.bing.com/th/id/OIP.GLROJzE0eb4LeQCETUiY_gHaHG?w=176&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" style="width: 300px; height: auto;">
+            </section>
+
+            <section class="col">
+                <h2>Sección 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam iure quisquam accusantium nihil provident neque a! Itaque, tempore. Repellat hic voluptate reiciendis doloremque, dolorum inventore distinctio harum sit modi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam iure quisquam accusantium nihil provident neque a! Itaque, tempore. Repellat hic voluptate reiciendis doloremque, dolorum inventore distinctio harum sit modi!</p>
+                <img src="https://www.bing.com/th/id/OIP.vZqQNVdadrX6bbRTNZhYZgHaHa?w=209&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" style="width: 300px; height: auto">
+            </section>  
+        </div>
+    </main>
+
+    <footer>
+        <p>2026 - Ejemplo sencillo</p>
+    </footer>
+</body>
+</html>
